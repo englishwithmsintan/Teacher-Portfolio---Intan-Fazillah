@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+
+  --color-brand-bg: #0c0c12;
+  --color-brand-surface: #15151c;
+  --color-brand-surface-hover: #1e1e28;
+  --color-brand-border: rgba(255, 255, 255, 0.05);
+  
+  --color-accent-violet: #a78bfa;
+  --color-accent-coral: #fb7185;
+  --color-accent-sky: #60a5fa;
+  --color-accent-teal: #2dd4bf;
+  --color-accent-amber: #fbbf24;
+  --color-accent-mint: #4ade80;
+  
+  /* Additional colors used in App.tsx */
+  --color-accent-electric: #3b82f6;
+  --color-accent-gold: #f59e0b;
+  --color-discord-text-header: #ffffff;
+  --color-discord-text-muted: #949ba4;
+  --color-discord-green: #23a55a;
+  --color-discord-blurple: #5865f2;
+
+  @keyframes gradient-move {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-brand-bg text-white font-sans antialiased text-lg;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-move 8s ease infinite;
+}
+
+.glass-panel {
+  @apply bg-brand-surface border border-brand-border transition-all duration-300;
+}
+
+.title-serif {
+  @apply font-display font-extrabold tracking-tight leading-tight;
+}
+
+.text-accent {
+  @apply text-accent-violet font-semibold tracking-wider;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-discord-text-muted/10 rounded-full hover:bg-discord-blurple transition-colors;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
