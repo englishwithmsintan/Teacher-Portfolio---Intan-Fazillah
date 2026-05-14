@@ -146,7 +146,7 @@ export default function App() {
             transition={{ delay: 0.2 }}
             className="text-xl md:text-2xl text-white/70 max-w-2xl mx-auto lg:mx-0 mb-12 leading-relaxed font-semibold"
           >
-            I craft communicative classrooms where learners aged 3-18 find their voice. I turn language learning into meaningful, real-world experiences.
+            I craft communicative classrooms where learners find their voice. I turn language learning into meaningful, real-world experiences.
           </motion.p>
           
           <motion.div 
@@ -229,7 +229,7 @@ export default function App() {
       <section className="max-w-7xl mx-auto px-6 md:px-10 pb-32 relative z-10">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {[
-            { label: 'Age Groups Taught', value: '3-18', color: 'text-accent-violet' },
+            { label: 'Teaching Approach', value: 'CLT', color: 'text-accent-violet' },
             { label: 'Framework Aligned', value: 'GSE', color: 'text-accent-coral' },
             { label: 'English Proficiency', value: 'Advanced', color: 'text-accent-sky' }
           ].map((stat, i) => (
@@ -325,7 +325,7 @@ export default function App() {
             </div>
             <ul className="space-y-4 list-none p-0 m-0">
               {[
-                'Taught English to learners aged 3-18 across multi-level groups with adapted methodology.',
+                'Taught English across multi-level groups with adapted methodology.',
                 'Planned and delivered communicative lessons; managed classroom dynamics and formative assessments.',
                 'Coordinated end-of-term achievement events and parent-teacher conferences.',
                 'Administered placement tests and supported programme promotion.'
