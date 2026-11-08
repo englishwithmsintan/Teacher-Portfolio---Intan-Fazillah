@@ -614,7 +614,7 @@ export default function App() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           {[
             { tag: 'Pearson English', value: 'C1', meta: '2025 Verification', color: 'text-accent-violet', bg: 'bg-accent-violet/5', link: 'https://credsverse.com/credentials/77edd47b-328c-4786-b6f6-5892efcd3f0f' },
-            { tag: 'EF SET', value: '77/100', meta: 'Certified Proficiency', color: 'text-accent-sky', bg: 'bg-accent-sky/5', link: 'https://cert.efset.org/en/m75VaN?trk=public_profile_see-credential' },
+            { tag: 'EF SET', value: '73/100', meta: 'Certified Proficiency', color: 'text-accent-sky', bg: 'bg-accent-sky/5', link: 'https://cert.efset.org/en/m75VaN?trk=public_profile_see-credential' },
             { tag: 'TOEFL ITP', value: '587', meta: 'Official Score', color: 'text-accent-amber', bg: 'bg-accent-amber/5', link: 'https://drive.google.com/file/d/19QYqegW_Pdlrbl_6mgMHbXa6sbLxwn1C/view?usp=drive_link' }
           ].map((item, i) => (
             <motion.a 
