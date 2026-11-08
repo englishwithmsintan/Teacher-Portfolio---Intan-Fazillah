@@ -692,7 +692,7 @@ export default function App() {
               highlight: false 
             },
             { 
-              title: 'EF SET English Certificate (Score: 77/100)', 
+              title: 'EF SET English Certificate (Score: 73/100)', 
               link: 'https://cert.efset.org/en/m75VaN?trk=public_profile_see-credential',
               meta: 'Official Verification · EF SET',
               highlight: false 
